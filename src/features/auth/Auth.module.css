@@ -1,0 +1,42 @@
+::-webkit-scrollbar {
+  width: 24px;
+}
+::-webkit-scrollbar-track {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #5a95c6;
+  border-radius: 11px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  background-clip: padding-box;
+}
+.auth_title {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+.auth_error {
+  color: #ff0040;
+  text-align: center;
+  margin: 3px;
+}
+.auth_signUp {
+  display: flex;
+  flex-direction: column;
+}
+.auth_headerImage {
+  object-fit: contain;
+}
+.auth_text {
+  color: rgb(6, 153, 211);
+  text-align: center;
+  cursor: pointer;
+}
+.auth_progress {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
