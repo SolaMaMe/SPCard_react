@@ -101,6 +101,7 @@ const Core: React.FC = () => {
         {profile?.nickName ? (
           <>
             <div className={styles.core_btns}>
+              {(isLoadingPost || isLoadingAuth) && <CircularProgress />}
               <button
                 className={styles.core_btn}
                 onClick={() => {
@@ -110,8 +111,6 @@ const Core: React.FC = () => {
               >
                 <MdOutlineNoteAdd />
               </button>
-
-              {(isLoadingPost || isLoadingAuth) && <CircularProgress />}
               <button
                 className={styles.core_btn}
                 onClick={() => {
